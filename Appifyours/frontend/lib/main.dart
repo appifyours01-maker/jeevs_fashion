@@ -6085,7 +6085,7 @@ Future<void> loadDynamicProductData() async {
 
 
 
-        setState(() {
+//         setState(() {
 
 
 
@@ -6309,7 +6309,7 @@ Future<void> loadDynamicProductData() async {
 
 
 
-    setState(() {
+//     setState(() {
 
 
 
@@ -6581,7 +6581,7 @@ void startRealTimeUpdates() async {
 
 
 
-      if (!mounted) return;
+//       if (!mounted) return;
 
 
 
@@ -6853,7 +6853,7 @@ void initState() {
 
 
 
-  super.initState();
+//   super.initState();
 
 
 
@@ -6997,7 +6997,7 @@ void dispose() {
 
 
 
-  super.dispose();
+//   super.dispose();
 
 
 
@@ -7334,7 +7334,7 @@ class MyApp extends StatelessWidget {
 
 
 
-      cardTheme: const CardThemeData(
+      cardTheme: const CardTheme(
 
 
 
@@ -17654,7 +17654,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
 
 
 
-      ),
+//       ),
 
 
 
@@ -40792,7 +40792,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          final shop = (_currentStoreInfo['storeName'] ?? 'My Store').toString();
+          final shop = ({}['storeName'] ?? 'My Store').toString();
           Navigator.push(
             context,
             MaterialPageRoute(
@@ -48592,7 +48592,7 @@ appBar: AppBar(
 
 
 
-      currentIndex: _currentPageIndex,
+      currentIndex: 0,
 
 
 
@@ -48608,7 +48608,7 @@ appBar: AppBar(
 
 
 
-      onTap: _onItemTapped,
+      onTap: (index) {},
 
 
 
@@ -48784,7 +48784,7 @@ appBar: AppBar(
 
 
 
-            label: Text('${_wishlistManager.items.length}'),
+            label: Text('${0}'),
 
 
 
@@ -48800,7 +48800,7 @@ appBar: AppBar(
 
 
 
-            isLabelVisible: _wishlistManager.items.length > 0,
+            isLabelVisible: 0 > 0,
 
 
 
@@ -48912,7 +48912,7 @@ appBar: AppBar(
 
 
 
-            label: Text('${_cartManager.items.length}'),
+            label: Text('${0}'),
 
 
 
@@ -48928,7 +48928,7 @@ appBar: AppBar(
 
 
 
-            isLabelVisible: _cartManager.items.length > 0,
+            isLabelVisible: 0 > 0,
 
 
 
