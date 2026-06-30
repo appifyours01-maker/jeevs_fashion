@@ -3,6 +3,7 @@ import 'chatbot.dart';
 import 'services/api_service.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 
 
@@ -114,7 +115,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 
 
-import 'package:frontend/utils/auth_helper.dart';
 
 
 
@@ -1658,7 +1658,7 @@ class CartManager extends ChangeNotifier {
 
 
 
-    if (_items.isEmpty) return '$';
+    if (_items.isEmpty) return '\$';
 
 
 
@@ -1738,7 +1738,7 @@ class CartManager extends ChangeNotifier {
 
 
 
-    String mostCommonCurrency = '$';
+    String mostCommonCurrency = '\$';
 
 
 
@@ -5573,55 +5573,55 @@ Future<void> loadDynamicProductData() async {
 
 
 
-    setState(() {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      isLoading = true;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      errorMessage = null;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    });
+//     setState(() {
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+//       isLoading = true;
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+//       errorMessage = null;
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+//     });
 
 
 
@@ -20709,7 +20709,7 @@ class _HomePageState extends State<HomePage> {
 
 
 
-    if (detected != '$') return detected;
+    if (detected != '\$') return detected;
 
 
 
@@ -20789,7 +20789,7 @@ class _HomePageState extends State<HomePage> {
 
 
 
-    return '$';
+    return '\$';
 
 
 
@@ -38805,7 +38805,7 @@ class _HomePageState extends State<HomePage> {
 
 
 
-                            future: authHelper.isAdmin(),
+                            future: Future.value(false),
 
 
 
@@ -49105,6 +49105,7 @@ appBar: AppBar(
 
 
   }
+
 
 
 
